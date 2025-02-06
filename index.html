@@ -41,6 +41,13 @@
             justify-content: center;
             align-items: center;
             margin-bottom: 40px; /* Увеличено расстояние */
+            outline: none; /* Убираем стандартный outline */
+            user-select: none; /* Запрещаем выделение текста */
+            -webkit-tap-highlight-color: transparent; /* Убираем подсветку при тапе на мобильных устройствах */
+        }
+
+        .button:active {
+            transform: scale(0.95); /* Легкое уменьшение кнопки при нажатии */
         }
 
         .button::before {
@@ -81,6 +88,13 @@
             display: flex;
             justify-content: center;
             align-items: center;
+            outline: none; /* Убираем стандартный outline */
+            user-select: none; /* Запрещаем выделение текста */
+            -webkit-tap-highlight-color: transparent; /* Убираем подсветку при тапе на мобильных устройствах */
+        }
+
+        .reset-button:active {
+            transform: scale(0.95); /* Легкое уменьшение кнопки при нажатии */
         }
 
         /* Убираем анимацию для кнопки сброса */
@@ -114,8 +128,8 @@
     <button class="reset-button" onclick="resetCounter()">0</button>
 
     <div class="footer">
-        ТАСБИХ<br><br>
-        <a href="https://t.me/ZAKYATRT" target="_blank">Фонд «Закят» ДУМ РТ</a>
+        Т А С Б И Х<br><br>
+        <a href="https://t.me/ZAKYATRT" target="_blank">В Фонд «Закят» ДУМ РТ</a>
     </div>
 
     <script>
